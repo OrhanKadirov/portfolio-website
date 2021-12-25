@@ -1,4 +1,4 @@
-# Hi I'm a junior Web Developer.
+# Hi I'm a Junior Web Developer.
 
 [![Orhan's GitHub stats](https://github-readme-stats.vercel.app/api?username=OrhanKadirov)](https://github.com/anuraghazra/github-readme-stats)
 
