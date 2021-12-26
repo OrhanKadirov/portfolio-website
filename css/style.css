@@ -25,9 +25,6 @@ body {
           box-sizing: border-box;
   /* intro styles */
   /* contact section */
-  /* contact section */
-  /* navigation CSS */
-  /* footer section */
 }
 
 body *,
@@ -37,12 +34,6 @@ body *::after {
           box-sizing: inherit;
 }
 
-body nav {
-  font-family: var(--mono);
-  font-size: 80%;
-  padding: 1rem;
-}
-
 body nav [class*="fa-"]:hover {
   color: var(--ooo);
 }
@@ -50,6 +41,12 @@ body nav [class*="fa-"]:hover {
 body nav [class*="fa-"] {
   font-size: 150%;
   color: var(--aqua);
+}
+
+body nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
 }
 
 body nav ul {
@@ -104,7 +101,7 @@ body nav ul h3 {
 }
 
 body nav ul .button {
-  background-color: var(--plum);
+  background-color: var(--darkblue);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
@@ -132,8 +129,8 @@ body #intro {
   padding-bottom: 10rem;
   padding: 5rem;
   background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#00d4ff), color-stop(35%, #4e4ecd), to(#070080));
-  background: linear-gradient(90deg, #00d4ff 0%, #4e4ecd 35%, #070080 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00d4ff), color-stop(30%, #4e4ecd), to(#070080));
+  background: linear-gradient(90deg, #00d4ff 0%, #4e4ecd 30%, #070080 100%);
 }
 
 body #intro p {
@@ -176,83 +173,6 @@ body a {
 body a:hover {
   color: var(--hotblue);
   text-decoration: none;
-}
-
-body #contact {
-  width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 3rem 0;
-}
-
-body #contact p:last-child {
-  margin-top: 3rem;
-}
-
-body nav {
-  font-family: var(--mono);
-  font-size: 80%;
-  padding: 1rem;
-}
-
-body nav h1, body nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
-}
-
-body nav [class*="fa-"] {
-  font-size: 150%;
-  color: var(--aqua);
-}
-
-body nav h1 [class*="fa-"] {
-  font-size: 100%;
-  color: var(--aqua);
-}
-
-body nav a {
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-body nav a:hover,
-body nav [class*="fa-"]:hover {
-  color: var(--ooo);
-}
-
-body .button {
-  background-color: var(--ooo);
-  color: white;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-body .button:hover {
-  color: white;
-  background-color: var(--hotblue);
-}
-
-body *,
-body *::before,
-body *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
 }
 
 body footer {

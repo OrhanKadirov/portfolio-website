@@ -29,18 +29,19 @@ body {
         box-sizing: inherit;
     }
 
+    nav [class*="fa-"]:hover {
+        color: var(--ooo);
+    }
+
+    nav [class*="fa-"] {
+        font-size: 150%;
+        color: var(--aqua);
+    }
+
     nav {
         font-family: var(--mono);
         font-size: 80%;
         padding: 1rem;
-        [class*="fa-"]:hover {
-            color: var(--ooo);
-        }
-
-        [class*="fa-"] {
-            font-size: 150%;
-            color: var(--aqua);
-        }
 
         ul {
             margin: 0;
@@ -85,7 +86,7 @@ body {
             }
 
             .button {
-                background-color: var(--plum);
+                background-color: var(--darkblue);
                 color: white;
                 padding: 0.5rem;
                 border-radius: 5px;
@@ -115,7 +116,7 @@ body {
         padding-bottom: 10rem;
         padding: 5rem;
         background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(78, 78, 205, 1) 35%, rgba(7, 0, 128, 1) 100%);
+        background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(78, 78, 205, 1) 30%, rgba(7, 0, 128, 1) 100%);
 
         p {
             font-size: 1rem;
@@ -161,69 +162,7 @@ body {
         text-decoration: none;
     }
     
-    /* contact section */
-    #contact {
-        width: 400px;
-        text-align: center;
-        margin: 0 auto;
-        padding: 3rem 0;
-        p:last-child {
-            margin-top: 3rem;
-        }
-    }
-
-    /* navigation CSS */
-    nav {
-        font-family: var(--mono);
-        font-size: 80%;
-        padding: 1rem;
-
-        h1, ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
-
-    }
-
-[class*="fa-"] {
-        font-size: 150%;
-        color: var(--aqua);
-    }
-    nav h1 [class*="fa-"] {
-        font-size: 100%;
-        color: var(--aqua);
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        display: block;
-    }
-    nav a:hover,
-    nav [class*="fa-"]:hover {
-        color: var(--ooo);
-    }
-    .button {
-        background-color: var(--ooo);
-        color: white;
-        padding: 0.5rem;
-        border-radius: 5px;
-    }
-    .button:hover {
-        color: white;
-        background-color: var(--hotblue);
-    }
-    /* footer section */
-    *,
-    *::before,
-    *::after {
-        box-sizing: inherit;
-    }
+    // Footer CSS
     footer {
         text-align: center;
         ul {
