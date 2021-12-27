@@ -172,7 +172,7 @@ body a {
 }
 
 body a:hover {
-  color: var(--hotblue);
+  color: #00d800;
   text-decoration: none;
 }
 
