@@ -126,6 +126,7 @@ body nav ul .button:hover {
 }
 
 body #intro {
+  height: 87vh;
   padding-bottom: 10rem;
   padding: 5rem;
   background: #020024;
@@ -177,6 +178,7 @@ body a:hover {
 
 body footer {
   text-align: center;
+  font-size: 1.1rem;
 }
 
 body footer ul {

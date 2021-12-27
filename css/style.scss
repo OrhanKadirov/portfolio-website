@@ -113,6 +113,7 @@ body {
     }
     /* intro styles */
     #intro {
+        height: 87vh;
         padding-bottom: 10rem;
         padding: 5rem;
         background: rgb(2, 0, 36);
@@ -165,6 +166,8 @@ body {
     // Footer CSS
     footer {
         text-align: center;
+        font-size: 1.1rem;
+
         ul {
             list-style-type: none;
             padding: 0;
