@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Web Dewelopment</title>
 </head>
+
 <body>
 
     <nav>
@@ -20,19 +23,22 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank"><span class="fab fa-linkedin" aria-hidden="true"></span>
-            <span class="sr-only">LinkedIn</span></a></li>
-            <li><a href="https://www.github.com/OrhanKadirov"><span class="fab fa-github-square" aria-hidden="true"></span>
-            <span class="sr-only">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><span class="fab fa-linkedin"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span></a></li>
+            <li><a href="https://www.github.com/OrhanKadirov"><span class="fab fa-github-square"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Github</span></a></li>
             <li><a href="#" target="_blank" class="button">Resume</a></li>
         </ul>
     </nav>
-    
+
     <section id="intro">
         <p class="name">Hi, my name is <span>Orhan Kadirov.</span></p>
-        <h2>I'm a Web Developer.</h2>
+        <h2>I'm a Junior Web Developer.</h2>
         <p>I'm specializing in HTML, CSS and JavaScript.</p>
-        <p>Currently, I'm completing the <a href="https://digitalcareerinstitute.org/" target="_blank">Digital Career Institute</a>.</p>
+        <p>Currently, I'm completing the <a href="https://digitalcareerinstitute.org/" target="_blank">Digital Career
+                Institute</a>.</p>
     </section>
 
     <section id="contact">
@@ -41,11 +47,60 @@
             I'm always interested hearing about your Project.
         </p>
         <p><a href="mailto:orhan.kadirov.gs@egmail.com">Email me</a></p>
+        <span>
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+            <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+                data-sdk-integration-source="button-factory"></script>
+            <script>
+                function initPayPalButton() {
+                    paypal.Buttons({
+                        style: {
+                            shape: 'rect',
+                            color: 'gold',
+                            layout: 'vertical',
+                            label: 'paypal',
+
+                        },
+
+                        createOrder: function (data, actions) {
+                            return actions.order.create({
+                                purchase_units: [{ "amount": { "currency_code": "USD", "value": 1 } }]
+                            });
+                        },
+
+                        onApprove: function (data, actions) {
+                            return actions.order.capture().then(function (orderData) {
+
+                                // Full available details
+                                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                                // Show a success message within this page, e.g.
+                                const element = document.getElementById('paypal-button-container');
+                                element.innerHTML = '';
+                                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                                // Or go to another URL:  actions.redirect('thank_you.html');
+
+                            });
+                        },
+
+                        onError: function (err) {
+                            console.log(err);
+                        }
+                    }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+            </script>
+        </span>
     </section>
 
     <!-- instructions in JavaScript block -->
     <footer>
-        <h2>Orhan Kadirov &middot; Web Developer</h2>
+        <h2>Orhan Kadirov &middot; Junior Web Developer</h2>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/" target="_blank">
@@ -70,4 +125,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -146,8 +146,10 @@ body {
     #contact {
         width: 400px;
         text-align: center;
-        margin: 0 auto;
-        padding: 3rem 0;
+        margin: 3.5rem auto;
+        padding: 2rem 1rem;
+        background-color: rgb(0, 221, 0);
+        border-radius: 0.3rem;
     }
 
     #contact p:last-child {
@@ -162,7 +164,7 @@ body {
         color: #00d800;
         text-decoration: none;
     }
-    
+
     // Footer CSS
     footer {
         text-align: center;

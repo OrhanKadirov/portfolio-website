@@ -159,8 +159,10 @@ body #intro h2 {
 body #contact {
   width: 400px;
   text-align: center;
-  margin: 0 auto;
-  padding: 3rem 0;
+  margin: 3.5rem auto;
+  padding: 2rem 1rem;
+  background-color: #00dd00;
+  border-radius: 0.3rem;
 }
 
 body #contact p:last-child {
