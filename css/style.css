@@ -1,0 +1,292 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #248BDA;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotblue: #025797;
+  --ooo: #000;
+  --darkblue: #002D5C;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+/* generic styles for the page */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+  /* border box model: https://css-tricks.com/box-sizing/ */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* intro styles */
+  /* contact section */
+  /* contact section */
+  /* navigation CSS */
+  /* footer section */
+}
+
+body *,
+body *::before,
+body *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+body nav [class*="fa-"]:hover {
+  color: var(--ooo);
+}
+
+body nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+body nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+body nav ul h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+
+body nav ul a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+body nav ul a:hover {
+  color: var(--ooo);
+}
+
+body nav ul li:first-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+
+body nav ul li:first-child h1 a {
+  font-family: var(--sans);
+}
+
+body nav ul h1,
+body nav ul h2,
+body nav ul h3 {
+  margin: 0;
+}
+
+body nav ul .button {
+  background-color: var(--plum);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+body nav ul .button:hover {
+  color: white;
+  background-color: var(--hotblue);
+}
+
+@media (min-width: 850px) {
+  body nav ul nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  body nav ul li:first-child {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+body #intro {
+  padding-bottom: 10rem;
+  padding: 5rem;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#00d4ff), color-stop(35%, #4e4ecd), to(#070080));
+  background: linear-gradient(90deg, #00d4ff 0%, #4e4ecd 35%, #070080 100%);
+}
+
+body #intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body #intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+body #intro span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+body #intro h2 {
+  font-size: 4rem;
+}
+
+body #contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+body #contact p:last-child {
+  margin-top: 3rem;
+}
+
+body a {
+  color: var(--ooo);
+}
+
+body a:hover {
+  color: var(--hotblue);
+  text-decoration: none;
+}
+
+body #contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+body #contact p:last-child {
+  margin-top: 3rem;
+}
+
+body nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+body nav h1, body nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+body nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+body nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+
+body nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+body nav a:hover,
+body nav [class*="fa-"]:hover {
+  color: var(--ooo);
+}
+
+body .button {
+  background-color: var(--ooo);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+body .button:hover {
+  color: white;
+  background-color: var(--hotblue);
+}
+
+body *,
+body *::before,
+body *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body footer {
+  text-align: center;
+}
+
+body footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 850px) {
+  body nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  body nav li:first-child {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
